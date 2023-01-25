@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+</head>
+
+<body>
+    <img class="wave" src="img/wave.png">
+    <div class="container">
+        <div class="img">
+            <img src="img/bg.svg">
+        </div>
+        <div class="login-content">
+            <form>
+                <img src="img/avatar.svg">
+                <h2 class="title">Login Here</h2>
+                <div class="input-div one">
+                    <div class="i">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="div">
+                        <input type="email" id="email" class="input" placeholder="email">
+                    </div>
+                </div>
+
+                <div class="input-div pass">
+                    <div class="i">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="div">
+                        <input type="password" id="password" class="input" placeholder="password">
+                    </div>
+                </div>
+                <!-- <a href="#"></a> -->
+                <input type="submit" class="btn" value="Login"  id="signin">
+                <a href="index.html">Sign up</a>
+            </form>
+        </div>
+    </div>
+
+
+
+    <!--firebase links-->
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+    <script>
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyARY2WpZf2bj2NrrBT3gqA5dKmnGNUsKVU",
+            authDomain: "form-smit.firebaseapp.com",
+            databaseURL: "https://form-smit-default-rtdb.firebaseio.com",
+            projectId: "form-smit",
+            storageBucket: "form-smit.appspot.com",
+            messagingSenderId: "844666829117",
+            appId: "1:844666829117:web:cfa64d11a46b5d50f06d54"
+        };
+
+        firebase.initializeApp(firebaseConfig)
+
+    </script>
+    <script src="new.js"></script>
+</body>
+
+</html>
